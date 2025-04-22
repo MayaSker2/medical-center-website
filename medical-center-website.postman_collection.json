@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "6e708091-534c-4a46-a03c-31b490403b7d",
+		"name": "medical-center-website",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30809668"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "full name",
+							"value": "اسماء",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ش@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "mobile number",
+							"value": "1234567899119",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "asdfgh8ِ@ِAA11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forget password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "asmaaabdaljalil54@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/forgot-password",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"forgot-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset password",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "password",
+							"value": "dfghbjkliuy6t5rew3",
+							"type": "text"
+						},
+						{
+							"key": "password confirmation",
+							"value": "dfghbjkliuy6t5rew3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/reset-password?email=asmaaabdaljalil54@gmail.com&token=d5293c1f018d4a30dca595c96fc35a06ca6eb24fbc8d0d21eabd940ca5cda48c",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reset-password"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "asmaaabdaljalil54@gmail.com"
+						},
+						{
+							"key": "token",
+							"value": "d5293c1f018d4a30dca595c96fc35a06ca6eb24fbc8d0d21eabd940ca5cda48c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "ش@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "mobile number",
+							"value": "1234567899119",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "asdfgh8ِ@ِAA11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQ1MzM2ODkwLCJleHAiOjE3NDUzNDA0OTAsIm5iZiI6MTc0NTMzNjg5MCwianRpIjoiUU4xc3dDSG5OR243V0ZLbiIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibGFzdF9sb2dpbl9hdCI6MTc0NTMzNjg5MH0.FYrI6Iqq_wOD5Xm5TouU1gNQDAiT9tAvqA0MmkCn-X4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQ1MjgwOTIzLCJleHAiOjE3NDUyODQ1MjMsIm5iZiI6MTc0NTI4MDkyMywianRpIjoiOWRndWRvSVpuRlV3dm9aNSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibGFzdF9sb2dpbl9hdCI6MTc0NTI4MDkyM30.SAzxYA5cJuM74Is5RwGyXQEAQOB0mOKA_4lzdvD3Wmw",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/me",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"me"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
