@@ -41,7 +41,7 @@ export default function Section3(){
     return<>
     <div className="py-4 px-8 font-league">
                 {doctors.map((doctor, index) => (
-                    <div key={index} className="flex bg-[#CAD6FF] rounded-2xl max-w-96 py-2 px-3 gap-2 mb-4">
+                    <div key={index} className="flex bg-[#CAD6FF] rounded-2xl max-w-96  py-2 px-3 gap-2 mb-4">
                         <img src={doctor.image} alt={doctor.name} />
                         <div>
                             <div className="bg-white rounded-xl py-2 px-4 w-52">

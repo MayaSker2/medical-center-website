@@ -5,7 +5,7 @@ import { SlCalender } from "react-icons/sl";
 import {  Link } from "react-router-dom";
 export default function Footer(){
     return<>
-    <div className="mt-2 mx-8 bg-[#2260FF] flex  py-4 max-w-96 justify-evenly rounded-3xl text-white text-2xl ">
+    <div className="mt-2 mx-8  bg-[#2260FF] flex  py-4 max-w-96 justify-evenly rounded-3xl text-white text-2xl ">
    <Link to =""> 
       <TiHomeOutline />
    </Link> 
