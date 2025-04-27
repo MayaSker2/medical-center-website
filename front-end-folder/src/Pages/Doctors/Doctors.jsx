@@ -3,7 +3,9 @@ import DoctorsCard from "./DoctorsCard"
 import Footer from "../../Components/Footer"
 export default function Doctors(){
     return<>
-    <DoctorNavbar/>
+    <div>
+       <DoctorNavbar title="Doctors" /> 
+        </div>
     <DoctorsCard/>
     <Footer/>
     </>

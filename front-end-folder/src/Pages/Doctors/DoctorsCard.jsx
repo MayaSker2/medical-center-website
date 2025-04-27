@@ -54,7 +54,7 @@ const doctors = [
 
 export default function DoctorsCard(){
     return<>
-   <div className="mt-4 font-league flex flex-col mx-8 max-w-80 gap-3">
+   <div className="mt-4 font-league flex flex-col mx-8 max-w-96 gap-3">
                 {doctors.map((doctor, index) => (
                     <div key={index} className="bg-[#CAD6FF] flex gap-2 rounded-2xl justify-center items-center py-3 px-3">
                         <img className="rounded-full w-28" src={doctor.image} alt={doctor.name} />
