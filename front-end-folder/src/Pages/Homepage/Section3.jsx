@@ -7,6 +7,7 @@ import { FaStar } from "react-icons/fa";
 import { LuMessageCircleMore } from "react-icons/lu";
 import { AiOutlineQuestion } from "react-icons/ai";
 import { MdFavoriteBorder } from "react-icons/md";
+
 const doctors = [
     {
         name: "Dr. Olivia Turner, M.D.",
@@ -50,7 +51,7 @@ export default function Section3(){
                             </div>
                             <div className="flex justify-between items-center">
                                 <div className="flex gap-2">
-                                    <div className="flex text-[#2260FF] bg-white rounded-xl w-16 items-center gap-2 mt-2 py-1 pl-1 pr-2">
+                                    <div className="flex text-[#2260FF] bg-white rounded-xl w-16 items-center justify-center gap-2 mt-2 py-1 pl-1 pr-2">
                                         <FaStar /> <span>{doctor.rating}</span>
                                     </div>
                                     <div className="flex text-[#2260FF] bg-white rounded-xl w-16 items-center justify-center gap-2 mt-2 py-1 pl-1 pr-2">
