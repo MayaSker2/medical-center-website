@@ -33,10 +33,10 @@ export default function DoctorNavbar({ title }) {
                     <Link className="bg-[#CAD6FF] rounded-full p-2 flex items-center justify-center hover:bg-[#91aef8]">
                         <img src={favourite} className="w-4 h-4" alt="Favourite" />
                     </Link>
-                    <Link className="bg-[#CAD6FF] rounded-full p-2 flex items-center justify-center hover:bg-[#91aef8]">
+                    <Link to="/femal-doctor" className="bg-[#CAD6FF] rounded-full p-2 flex items-center justify-center hover:bg-[#91aef8]">
                         <img src={arrowbottom} className="w-4 h-4" alt="Arrow Bottom" />
                     </Link>
-                    <Link className="bg-[#CAD6FF] rounded-full p-2 flex items-center justify-center hover:bg-[#91aef8]">
+                    <Link to="/male-doctor" className="bg-[#CAD6FF] rounded-full p-2 flex items-center justify-center hover:bg-[#91aef8]">
                         <img src={arrowtop} className="w-4 h-4" alt="Arrow Top" />
                     </Link>
                 </div>

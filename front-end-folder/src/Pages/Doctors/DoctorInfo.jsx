@@ -46,13 +46,13 @@ export default function DoctorInfo(){
             <p className="font-light text-xs">Dermato-Genetics</p>
         </div>
         <div className="flex gap-2 mx-8">
-             <div className="flex text-[#2260FF] font-light text-xs bg-white rounded-xl w-11 items-start justify-center gap-1 mt-2 py-1 pl-1 pr-2">
+             <div className="flex text-[#2260FF] font-light text-xs bg-white rounded-xl w-11 items-start justify-center gap-1 mt-2 py-1 pl-1 pr-2 h-5">
                 <FaStar /> <span>5</span>
             </div>
-        <div className="flex text-[#2260FF] font-light text-xs bg-white rounded-xl w-11  items-start justify-center gap-1 mt-2 py-1 pl-1 pr-2">
+        <div className="flex text-[#2260FF] font-light text-xs bg-white rounded-xl w-11  items-start justify-center gap-1 mt-2 py-1 pl-1 pr-2 h-5">
           <LuMessageCircleMore /> <span >40</span>
         </div>
-        <div className="flex text-[#2260FF] bg-white rounded-xl  items-center justify-center gap-2 mt-2 py-1 pl-1 pr-2">
+        <div className="flex text-[#2260FF] bg-white rounded-xl   items-center justify-center gap-2 mt-2 py-1 pl-1 pr-2">
         <IoAlarmOutline /> <span className="font-light text-xs text-[#2260FF]">Mon-Sat / 9:00AM - 5:00PM</span>
         </div>
        
