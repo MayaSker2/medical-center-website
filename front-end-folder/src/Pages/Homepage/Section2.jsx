@@ -31,7 +31,7 @@ export default function section2(){
         </div>
        
        </div>
-       <div className="px-5 bg-white rounded-3xl py-4 mx-auto w-80" >
+       <div className="px-5 bg-white rounded-3xl py-4 mx-auto  w-80" >
           <p className="text-right text-[#2260FF] text-xs font-normal">11 Wednesday - Today</p>
           <div className="flex gap-1  ">
               <p className="text-[#2260FF] text-xs font-light ">9 AM</p>
